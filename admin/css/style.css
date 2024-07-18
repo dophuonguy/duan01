@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 0.7vw;
+}
+
+.boxcenter{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.row{
+    float: left;
+    width: 100%;
+}
+
+.mb{
+    margin-bottom: 30px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mr{
+    margin-right: 2%;
+}
+
+.demo{
+    background-color: red;
+    min-height: 100px;
+}
+
+header{
+    background-color:#ff000d;
+    border: 1px black solid;
+    color: black;
+    border-radius: 5px;
+}
+
+header h1{
+    margin: 10px 20px;
+    font-size: 1.2vw;
+}
+
+/* ------------- */
+
+.menu{
+    background-color:rgb(224, 10, 31);
+    color: white;
+    border-radius: 5px;
+}
+
+.boxleft{
+    float: left;
+    width: 74%;
+}
+
+.boxright{
+    float: right;
+    width: 24%;
+}
+
+.boxtitle{
+    background-color: #eee;
+    color: #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.boxcontent{
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.formlogin{
+    line-height: 150%;
+}
+
+.formlogin input[type="text"]{
+    width: 100%;
+    border: 1px #ccc solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formlogin input[type="password"]{
+    width: 100%;
+    border: 1px #ccc solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formlogin input[type="checkbox"]{
+    border-radius: 5px;
+}
+
+.formlogin input[type="submit"],
+.tmcontent input[type="submit"],
+.tmcontent input[type="button"],
+.tmcontent input[type="reset"]
+{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ff0015;
+    border: 1px white solid;
+}
+
+.formlogin input[type="submit"]:hover, .tmcontent input[type="submit"]:hover, .tmcontent input[type="button"]:hover, .tmcontent input[type="reset"]:hover{
+    background-color: #ccc;
+}
+
+.formlogin li a{
+    color: teal;
+    text-decoration: none;
+}
+
+.formlogin li a:hover{
+    color: #590;
+    text-decoration: underline;
+}
+
+.boxcontent2{
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    background-color: #eee;
+}
+
+.menudoc ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menudoc ul li{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px #ccc solid;
+}
+
+.menudoc ul li a{
+    color: #666;
+    text-decoration: none;
+}
+
+.menudoc ul li:hover{
+    background-color: #ccc;
+}
+
+.boxfooter{
+    background-color: #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    padding: 10px;
+}
+
+.search input[type="text"]{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+}
+
+.banner{
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner img{
+    height: 300px;
+}
+
+.boxsp{
+    float: left;
+    width: 32%;
+    min-height: 300px;
+    border: 1px #eee solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boxsp .img{
+    min-height: 250px;
+    text-align: center;
+}
+
+.img img{
+    height: 230px;
+}
+
+.top10 img{
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+    
+}
+
+.top10 a{
+    color: #000;
+    text-decoration: none;
+}
+
+footer{
+    background-color:#39372a;
+    border: 1px black solid;
+    font-size: 0.8vw;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.menu ul{
+    padding: 0px 15px;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 0px 15px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover{
+    color: #666;
+    font-size: 0.8vw;
+}
+
+.headeradmin{
+    background-color:#eee;
+    border: 1px black solid;
+    color: rgb(230, 17, 17);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 2vw;
+}
+
+.headeradmin h1{
+    font-size: 2vw;
+}
+
+.tm{
+    background-color:#eee;
+    border: 1px black solid;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 2vw;
+}
+
+.tmcontent{
+    padding: 20px 0;
+}
+
+.tableLoaiHang table{
+    color: #ff0015;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableLoaiHang table th:nth-child(1){
+    width: 10%;
+    padding: 8px;
+    background-color: white;
+}
+
+
+
+.tableLoaiHang table td{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+}
+
+.dsloai{
+    width: 100%;
+}.boxcontent.formlogin {
+    height: 248px;
+}input[type="submit"] {
+    background-color: black;
+    color: white;
+}input[type="reset"] {
+    background-color: black;
+    color: white;
+}input[type="button"] {
+    color: white;
+}

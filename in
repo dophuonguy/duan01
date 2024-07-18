@@ -1,0 +1,372 @@
+<main>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-md-8">
+                <div class="row">
+                    <?php include 'view/silder.php' ?>
+                </div>
+                <div class="row mt-3">
+                    <?php foreach ($spnew as $sp) {
+                        extract($sp);
+                        $hinh = $img_path . $img;
+                        $link = 'index.php?act=chitietsanpham&idsp=' . $id;
+                        echo '
+                        <div class="col-md-4 mb-3">
+                            <a href="index.php?act=chitietsanpham&idsp=' . $id . '">
+                            <div class="ca
+                            rd h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />
+                            <!-- Product details-->
+                            <div class="card-body p-3">
+                                <div class="text-center ">
+                                    <div class="" style="max-height: 70px;">
+                                    <!-- Product name-->
+                                        <h5 class="fw-bolder">' . $name . '</h5>
+                                    <!-- Product price-->
+                                    <p class="text-danger"</p>' . $price . ' VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Product actions-->
+                                <form action="index.php?act=addgiohang" method="post">
+                                    <div class="card-footer p-2 pt-0 border-top-0 bg-transparent mb-1">
+                                        <div class="text-center">
+                                            
+                                                <input type="hidden" name="id" value="' . $id . '">
+                                                <input type="hidden" name="name" value="' . $name . '">
+                                                <input type="hidden" name="img" value="' . $img . '">
+                                                <input type="hidden" name="price" value="' . $price . '">
+                                                <input class="btn btn-outline-dark mt-auto "  type="submit" name="themgiohang" value="Thêm vào giỏ hàng">
+                                        </div>
+                                    </div> 
+                                </form>  
+                                </div>
+                                </a>
+                            </div>';
+                    }
+                    ?>
+
+                </div>
+            </div>
+            <?php include 'view/boxright.php' ?>
+        </div>
+    </div>
+</main>
+<?php foreach ($spnew as $sp) {
+                        extract($sp);
+                        $hinh = $img_path . $img;
+                        $link = 'index.php?act=chitietsanpham&idsp=' . $id;
+            ?>
+<section id="hang-hot">
+        <div class="tieu-de">
+            <p>SẢN PHẨM BÁN CHẠY</p>           
+        </div>
+        <hr size="5px" width="82%" color="coral" style="margin-bottom: 20px; margin-left: 9%;">
+        <div class="sp-hot">
+            <div class="hot-brand">
+                <div class="bao">
+                    <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                    <div class="box-name"><?php echo $name; ?></div>
+                    <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                        <span><?php echo $price; ?> đ</span>
+                        <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                    </div></a>
+                    <div class="danh-gia">
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <span style="font-size: 12px;">5 đánh giá</span>
+                    </div>  
+                    <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>                                                    
+                </div>                              
+            </div>
+            <div class="hot-brand">
+                <div class="bao">
+                    <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                    <div class="box-name"><?php echo $name; ?></div>
+                    <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                        <span><?php echo $price; ?> đ</span>
+                        <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                    </div></a>
+                    <div class="danh-gia">
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <span style="font-size: 12px;">5 đánh giá</span>
+                    </div>  
+                    <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>                                                    
+                </div>                              
+            </div>
+            <div class="hot-brand">
+                <div class="bao">
+                    <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                    <div class="box-name"><?php echo $name; ?></div>
+                    <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                        <span><?php echo $price; ?> đ</span>
+                        <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                    </div></a>
+                    <div class="danh-gia">
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <span style="font-size: 12px;">5 đánh giá</span>
+                    </div>  
+                    <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>                                                    
+                </div>                              
+            </div>
+            <div class="hot-brand">
+                <div class="bao">
+                    <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                    <div class="box-name"><?php echo $name; ?></div>
+                    <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                        <span><?php echo $price; ?> đ</span>
+                        <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                    </div></a>
+                    <div class="danh-gia">
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <span style="font-size: 12px;">5 đánh giá</span>
+                    </div>  
+                    <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>                                                    
+                </div>                              
+            </div>
+            <div class="hot-brand">
+                <div class="bao">
+                    <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                    <div class="box-name"><?php echo $name; ?></div>
+                    <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                        <span><?php echo $price; ?> đ</span>
+                        <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                    </div></a>
+                    <div class="danh-gia">
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                        <span style="font-size: 12px;">5 đánh giá</span>
+                    </div>  
+                    <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>                                                    
+                </div>                              
+            </div>
+        </div>
+    </section>
+    <section id="san-pham-chinh">
+        <div class="tieu-de">
+            <p>ĐIỆN THOẠI NỔI BẬT</p>           
+        </div>
+        <hr size="5px" width="82%" color="coral" style="margin-bottom: 20px; margin-left: 9%;">
+        <div class="row">
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 col-s-6 box">
+                <div class="contentsp">
+                    <div class="bao-sp-chinh">
+                        <?php echo '<a href="index.php?act=chitietsanpham&idsp=' . $id . '">'; ?>
+                        <div class="box-name"><?php echo $name; ?></div>
+                        <div style="color: red; margin-top: 5px; margin-left: 5px; font-size: 17px;">
+                            <span><?php echo $price; ?> đ</span>
+                            <span style="text-decoration:line-through ; color: gray; font-size: 12px;">25000000 đ</span>
+                        </div></a>
+                        <div class="danh-gia">
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fas fa-star fa-xs" style="color: rgb(255, 217, 0);"></i>
+                            <span style="font-size: 12px;">5 đánh giá</span>
+                        </div>  
+                        <?php echo ' <img class="card-img-top" src="' . $hinh . '" alt="..." style="max-height: 400px;" />'; ?>       
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </section>
+    <?php } ?>
+    
+
+<!-- ========== End main ========== -->
+<!-- <a class="btn btn-outline-dark mt-auto" href="#">Thêm vào giỏ hàng</a> -->
+<!-- <input type="hidden" name="" value=""> -->
